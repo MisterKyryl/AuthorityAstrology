@@ -337,6 +337,51 @@
             }));
         }
     }), 0);
+    document.addEventListener("DOMContentLoaded", (function() {
+        const videos = document.querySelectorAll(".review-video");
+        videos.forEach((function(video) {
+            const videoContainer = video.closest(".item-reviews__video");
+            const playButton = videoContainer.querySelector(".play-button");
+            const videoOverlay = videoContainer.querySelector(".video-overlay");
+            const bannerReviews = video.closest(".reviews__item").querySelector(".banner-reviews");
+            playButton.addEventListener("click", (function() {
+                playVideo(video, videoOverlay, bannerReviews);
+            }));
+            videoOverlay.addEventListener("click", (function() {
+                playVideo(video, videoOverlay, bannerReviews);
+            }));
+            video.addEventListener("pause", (function() {
+                videoOverlay.style.display = "flex";
+                if (!videoContainer.classList.contains("_active-video")) bannerReviews.classList.remove("hide");
+            }));
+            video.addEventListener("play", (function() {
+                videoOverlay.style.display = "none";
+                bannerReviews.classList.add("hide");
+                videoContainer.classList.add("_active-video");
+            }));
+        }));
+        function playVideo(video, videoOverlay, bannerReviews) {
+            videos.forEach((function(otherVideo) {
+                if (otherVideo !== video) {
+                    otherVideo.pause();
+                    otherVideo.removeAttribute("controls");
+                    otherVideo.closest(".item-reviews__video").classList.remove("_active-video");
+                    otherVideo.closest(".reviews__item").querySelector(".banner-reviews").classList.remove("hide");
+                }
+            }));
+            video.play();
+            video.setAttribute("controls", "");
+            videoOverlay.style.display = "none";
+            bannerReviews.classList.add("hide");
+            video.closest(".item-reviews__video").classList.add("_active-video");
+        }
+    }));
+    document.addEventListener("DOMContentLoaded", (function() {
+        const scrollUpButton = document.querySelector(".scroll-up-button");
+        window.addEventListener("scroll", (function() {
+            if (window.scrollY > 300) scrollUpButton.classList.add("show"); else scrollUpButton.classList.remove("show");
+        }));
+    }));
     window["FLS"] = true;
     isWebp();
     menuInit();

@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="eu">
+<html lang="en">
 
 <head>
 	<title>Authority Astrology - AI Astrology & Chart Interpretations</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20240621124903">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240621161231">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -367,7 +367,7 @@
 				<div class="plan__container">
 					<div class="plan__header">
 						<p class="plan__text">UNLOCK YOUR ASTROLOGICAL INSIGHTS</p>
-						<div class="plan__title">Select The Plan That Aligns With Your Stars</div>
+						<h2 class="plan__title">Select The Plan That Aligns With Your Stars</h2>
 						<div class="plan__offer">Limited time launch offer: up to 51% off</div>
 					</div>
 					<div class="plan__body">
@@ -395,7 +395,7 @@
 								</div>
 								<div class="item-plan__payment payment-plan">
 									<div class="payment-plan__text">(Billed monthly)</div>
-									<a href="#" class="payment-plan__button button">Get Unlimited Access</a>
+									<a href="#" onclick="handleExternalLinkClick(this.href)" class="payment-plan__button button">Get Unlimited Access</a>
 									<div class="payment-plan__secure">
 										<span>
 											<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="shield-check" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="12" height="12" data-v-a4cad661="">
@@ -432,7 +432,7 @@
 								</div>
 								<div class="item-plan__payment payment-plan">
 									<div class="payment-plan__text">($97 billed once)</div>
-									<a href="#" class="payment-plan__button button">Get Unlimited Access</a>
+									<a href="#" onclick="handleExternalLinkClick(this.href)" class="payment-plan__button button">Get Unlimited Access</a>
 									<div class="payment-plan__secure">
 										<span>
 											<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="shield-check" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="12" height="12" data-v-a4cad661="">
@@ -467,7 +467,7 @@
 								</div>
 								<div class="item-plan__payment payment-plan">
 									<div class="payment-plan__text">($147 billed once)</div>
-									<a href="#" class="payment-plan__button button">Get Unlimited Access</a>
+									<a href="#" onclick="handleExternalLinkClick(this.href)" class="payment-plan__button button">Get Unlimited Access</a>
 									<div class="payment-plan__secure">
 										<span>
 											<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="shield-check" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="12" height="12" data-v-a4cad661="">
@@ -493,7 +493,10 @@
 						<div class="reviews__items">
 							<div class="reviews__item item-reviews">
 								<div class="item-reviews__video">
-									<video src="https://res.cloudinary.com/dq3h7yic4/video/upload/v1713163309/cosmickrysta_11_Feb_2024_1713161144_3c31479a88.mp4" preload="auto" controls="" style="width: 100%; height: 100%;" autoplay=""></video>
+									<video class="review-video" src="https://res.cloudinary.com/dq3h7yic4/video/upload/v1713163309/cosmickrysta_11_Feb_2024_1713161144_3c31479a88.mp4" preload="auto" style="width: 100%; height: 100%;"></video>
+									<div class="video-overlay">
+										<button class="play-button">►</button>
+									</div>
 								</div>
 								<div class="item-reviews__banner banner-reviews">
 									<div class="banner-reviews__raiting">
@@ -523,7 +526,7 @@
 											using it <span>whenever I have an astrology question.</span>
 										</div>
 										<div class="description-reviews__image">
-											<svg stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 24 24" class="text-2xl md:text-4xl text-gray-400 shrink-0" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+											<svg stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 24 24" height="36px" width="36px" xmlns="http://www.w3.org/2000/svg">
 												<path d="M9.13456 9H12.1346L10 14.6075H7L9.13456 9Z" fill="currentColor"></path>
 												<path d="M14.1346 9H17.1346L15 14.6075H12L14.1346 9Z" fill="currentColor"></path>
 											</svg>
@@ -535,7 +538,11 @@
 							<div class="reviews__item item-reviews">
 								<div class="item-reviews__body">
 									<div class="item-reviews__video">
-										<video src="https://res.cloudinary.com/dq3h7yic4/video/upload/v1713163078/theariesfairy_28_Feb_2024_1713160986_4bdf5b6064.mp4" preload="auto" autoplay="" controls="" style="width: 100%; height: 100%;"></video>
+										<video class="review-video" src="https://res.cloudinary.com/dq3h7yic4/video/upload/v1713163078/theariesfairy_28_Feb_2024_1713160986_4bdf5b6064.mp4" preload="auto" style="width: 100%; height: 100%;">
+										</video>
+										<div class="video-overlay">
+											<button class="play-button">►</button>
+										</div>
 									</div>
 									<div class="item-reviews__banner banner-reviews">
 										<div class="banner-reviews__raiting">
@@ -565,7 +572,7 @@
 											This tool makes <b>makes understanding astrology so easy</b> and <span>I can't recommend it enough!</span>
 										</div>
 										<div class="description-reviews__image">
-											<svg stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 24 24" class="text-2xl md:text-4xl text-gray-400 shrink-0" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+											<svg stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 24 24" height="36px" width="36px" xmlns="http://www.w3.org/2000/svg">
 												<path d="M9.13456 9H12.1346L10 14.6075H7L9.13456 9Z" fill="currentColor"></path>
 												<path d="M14.1346 9H17.1346L15 14.6075H12L14.1346 9Z" fill="currentColor"></path>
 											</svg>
@@ -577,7 +584,11 @@
 							<div class="reviews__item item-reviews">
 								<div class="item-reviews__body">
 									<div class="item-reviews__video">
-										<video src="https://res.cloudinary.com/dq3h7yic4/video/upload/v1713163078/theariesfairy_28_Feb_2024_1713160986_4bdf5b6064.mp4" preload="auto" autoplay="" controls="" style="width: 100%; height: 100%;"></video>
+										<video class="review-video" src="https://res.cloudinary.com/dq3h7yic4/video/upload/v1713163291/belastrology_12_Feb_2024_1713161102_38a3fe5b32.mp4" preload="auto" style="width: 100%; height: 100%;">
+										</video>
+										<div class="video-overlay">
+											<button class="play-button">►</button>
+										</div>
 									</div>
 									<div class="item-reviews__banner banner-reviews">
 										<div class="banner-reviews__raiting">
@@ -597,23 +608,167 @@
 												<path d="M10 15l-5.5 3 1.5-6.5L0 6l6.6-0.6L10 0l3.4 5.4L20 6l-6 5.5 1.5 6.5z"></path>
 											</svg>
 										</div>
-										<div class="banner-reviews__name">_theariesfairy</div>
-										<div class="banner-reviews__speciality">Astrology & Tarot Guru</div>
+										<div class="banner-reviews__name">belleastrology</div>
+										<div class="banner-reviews__speciality">Therapist & Astrologer</div>
 									</div>
 								</div>
 								<div class="item-reviews__description description-reviews">
 									<div class="description-reviews__body">
 										<div class="description-reviews__comment">
-											This tool makes <b>makes understanding astrology so easy</b> and <span>I can't recommend it enough!</span>
+											You can click a button and <b>ask any question you want about astrology</b> which is very useful. It's <span>ChatGPT,
+												but for astrology.</span>
 										</div>
 										<div class="description-reviews__image">
-											<svg stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 24 24" class="text-2xl md:text-4xl text-gray-400 shrink-0" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+											<svg stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 24 24" height="36px" width="36px" xmlns="http://www.w3.org/2000/svg">
 												<path d="M9.13456 9H12.1346L10 14.6075H7L9.13456 9Z" fill="currentColor"></path>
 												<path d="M14.1346 9H17.1346L15 14.6075H12L14.1346 9Z" fill="currentColor"></path>
 											</svg>
 										</div>
 									</div>
-									<div class="description-reviews__date">February 28, 2024</div>
+									<div class="description-reviews__date">February 12, 2024</div>
+								</div>
+							</div>
+							<div class="reviews__item item-reviews">
+								<div class="item-reviews__body">
+									<div class="item-reviews__video">
+										<video class="review-video" src="https://res.cloudinary.com/dq3h7yic4/video/upload/v1713163087/evietheempress_20_Feb_2024_1713161174_27163f4411.mp4" preload="auto" style="width: 100%; height: 100%;">
+										</video>
+										<div class="video-overlay">
+											<button class="play-button">►</button>
+										</div>
+									</div>
+									<div class="item-reviews__banner banner-reviews">
+										<div class="banner-reviews__raiting">
+											<svg fill="#eab308" width="16px" height="16px" viewBox="0 0 20 20">
+												<path d="M10 15l-5.5 3 1.5-6.5L0 6l6.6-0.6L10 0l3.4 5.4L20 6l-6 5.5 1.5 6.5z"></path>
+											</svg>
+											<svg fill="#eab308" width="16px" height="16px" viewBox="0 0 20 20">
+												<path d="M10 15l-5.5 3 1.5-6.5L0 6l6.6-0.6L10 0l3.4 5.4L20 6l-6 5.5 1.5 6.5z"></path>
+											</svg>
+											<svg fill="#eab308" width="16px" height="16px" viewBox="0 0 20 20">
+												<path d="M10 15l-5.5 3 1.5-6.5L0 6l6.6-0.6L10 0l3.4 5.4L20 6l-6 5.5 1.5 6.5z"></path>
+											</svg>
+											<svg fill="#eab308" width="16px" height="16px" viewBox="0 0 20 20">
+												<path d="M10 15l-5.5 3 1.5-6.5L0 6l6.6-0.6L10 0l3.4 5.4L20 6l-6 5.5 1.5 6.5z"></path>
+											</svg>
+											<svg fill="#eab308" width="16px" height="16px" viewBox="0 0 20 20">
+												<path d="M10 15l-5.5 3 1.5-6.5L0 6l6.6-0.6L10 0l3.4 5.4L20 6l-6 5.5 1.5 6.5z"></path>
+											</svg>
+										</div>
+										<div class="banner-reviews__name">evietheempress</div>
+										<div class="banner-reviews__speciality">Astrologer</div>
+									</div>
+								</div>
+								<div class="item-reviews__description description-reviews">
+									<div class="description-reviews__body">
+										<div class="description-reviews__comment">
+											It's a very cool tool that allows you to <span>expand your knowledge in astrology in a very efficient way.</span> I
+											think it's an amazing website because you can ask so <b>many different types of questions about your birth chart.</b>
+										</div>
+										<div class="description-reviews__image">
+											<svg stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 24 24" height="36px" width="36px" xmlns="http://www.w3.org/2000/svg">
+												<path d="M9.13456 9H12.1346L10 14.6075H7L9.13456 9Z" fill="currentColor"></path>
+												<path d="M14.1346 9H17.1346L15 14.6075H12L14.1346 9Z" fill="currentColor"></path>
+											</svg>
+										</div>
+									</div>
+									<div class="description-reviews__date">February 20, 2024</div>
+								</div>
+							</div>
+							<div class="reviews__item item-reviews">
+								<div class="item-reviews__body">
+									<div class="item-reviews__video">
+										<video class="review-video" src="https://res.cloudinary.com/dq3h7yic4/video/upload/v1713163317/astrologicalphotographer_19_Mar_2024_1713161031_c7be17b254.mp4" preload="auto" style="width: 100%; height: 100%;">
+										</video>
+										<div class="video-overlay">
+											<button class="play-button">►</button>
+										</div>
+									</div>
+									<div class="item-reviews__banner banner-reviews">
+										<div class="banner-reviews__raiting">
+											<svg fill="#eab308" width="16px" height="16px" viewBox="0 0 20 20">
+												<path d="M10 15l-5.5 3 1.5-6.5L0 6l6.6-0.6L10 0l3.4 5.4L20 6l-6 5.5 1.5 6.5z"></path>
+											</svg>
+											<svg fill="#eab308" width="16px" height="16px" viewBox="0 0 20 20">
+												<path d="M10 15l-5.5 3 1.5-6.5L0 6l6.6-0.6L10 0l3.4 5.4L20 6l-6 5.5 1.5 6.5z"></path>
+											</svg>
+											<svg fill="#eab308" width="16px" height="16px" viewBox="0 0 20 20">
+												<path d="M10 15l-5.5 3 1.5-6.5L0 6l6.6-0.6L10 0l3.4 5.4L20 6l-6 5.5 1.5 6.5z"></path>
+											</svg>
+											<svg fill="#eab308" width="16px" height="16px" viewBox="0 0 20 20">
+												<path d="M10 15l-5.5 3 1.5-6.5L0 6l6.6-0.6L10 0l3.4 5.4L20 6l-6 5.5 1.5 6.5z"></path>
+											</svg>
+											<svg fill="#eab308" width="16px" height="16px" viewBox="0 0 20 20">
+												<path d="M10 15l-5.5 3 1.5-6.5L0 6l6.6-0.6L10 0l3.4 5.4L20 6l-6 5.5 1.5 6.5z"></path>
+											</svg>
+										</div>
+										<div class="banner-reviews__name">astrologicalphotographer</div>
+										<div class="banner-reviews__speciality">Astrologer & Photographer</div>
+									</div>
+								</div>
+								<div class="item-reviews__description description-reviews">
+									<div class="description-reviews__body">
+										<div class="description-reviews__comment">
+											It's a great resource <span>for those who want to ask specific questions about their birth chart,</span> such as a
+											specific conjunction with their midheaven, or anything else, and <b>you don't have the time or money</b> for a full
+											astrological reading.
+										</div>
+										<div class="description-reviews__image">
+											<svg stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 24 24" height="36px" width="36px" xmlns="http://www.w3.org/2000/svg">
+												<path d="M9.13456 9H12.1346L10 14.6075H7L9.13456 9Z" fill="currentColor"></path>
+												<path d="M14.1346 9H17.1346L15 14.6075H12L14.1346 9Z" fill="currentColor"></path>
+											</svg>
+										</div>
+									</div>
+									<div class="description-reviews__date">March 19, 2024</div>
+								</div>
+							</div>
+							<div class="reviews__item item-reviews">
+								<div class="item-reviews__body">
+									<div class="item-reviews__video">
+										<video class="review-video" src="https://res.cloudinary.com/dq3h7yic4/video/upload/v1713163006/lilylaurina_edited_1713161547_61b6e0680a.mp4" preload="auto" style="width: 100%; height: 100%;">
+										</video>
+										<div class="video-overlay">
+											<button class="play-button">►</button>
+										</div>
+									</div>
+									<div class="item-reviews__banner banner-reviews">
+										<div class="banner-reviews__raiting">
+											<svg fill="#eab308" width="16px" height="16px" viewBox="0 0 20 20">
+												<path d="M10 15l-5.5 3 1.5-6.5L0 6l6.6-0.6L10 0l3.4 5.4L20 6l-6 5.5 1.5 6.5z"></path>
+											</svg>
+											<svg fill="#eab308" width="16px" height="16px" viewBox="0 0 20 20">
+												<path d="M10 15l-5.5 3 1.5-6.5L0 6l6.6-0.6L10 0l3.4 5.4L20 6l-6 5.5 1.5 6.5z"></path>
+											</svg>
+											<svg fill="#eab308" width="16px" height="16px" viewBox="0 0 20 20">
+												<path d="M10 15l-5.5 3 1.5-6.5L0 6l6.6-0.6L10 0l3.4 5.4L20 6l-6 5.5 1.5 6.5z"></path>
+											</svg>
+											<svg fill="#eab308" width="16px" height="16px" viewBox="0 0 20 20">
+												<path d="M10 15l-5.5 3 1.5-6.5L0 6l6.6-0.6L10 0l3.4 5.4L20 6l-6 5.5 1.5 6.5z"></path>
+											</svg>
+											<svg fill="#eab308" width="16px" height="16px" viewBox="0 0 20 20">
+												<path d="M10 15l-5.5 3 1.5-6.5L0 6l6.6-0.6L10 0l3.4 5.4L20 6l-6 5.5 1.5 6.5z"></path>
+											</svg>
+										</div>
+										<div class="banner-reviews__name">lilylaurina</div>
+										<div class="banner-reviews__speciality">Astrology and Numerologist</div>
+									</div>
+								</div>
+								<div class="item-reviews__description description-reviews">
+									<div class="description-reviews__body">
+										<div class="description-reviews__comment">
+											You can ask any question, such as, <b>"What's the best way for me to make money?"</b> It will give you a tailored
+											answer in connection to your astrology, so you know how to <span>take advantage of your energy</span> and <b>make the
+												most money possible.</b>
+										</div>
+										<div class="description-reviews__image">
+											<svg stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 24 24" height="36px" width="36px" xmlns="http://www.w3.org/2000/svg">
+												<path d="M9.13456 9H12.1346L10 14.6075H7L9.13456 9Z" fill="currentColor"></path>
+												<path d="M14.1346 9H17.1346L15 14.6075H12L14.1346 9Z" fill="currentColor"></path>
+											</svg>
+										</div>
+									</div>
+									<div class="description-reviews__date">February 15, 2024</div>
 								</div>
 							</div>
 						</div>
@@ -623,8 +778,8 @@
 			<section class="page__questions questions">
 				<div class="questions__container">
 					<div class="questions__header header-questions">
-						<div class="header-questions__title">Frequently Asked Questions</div>
-						<div class="header-questions__text">Do you have any other questions? Reach out to use by email by clicking <a href="#">here</a>.
+						<h2 class="header-questions__title">Frequently Asked Questions</h2>
+						<div class="header-questions__text">Do you have any other questions? Reach out to use by email by clicking <a href="#" onclick="handleExternalLinkClick(this.href)">here</a>.
 						</div>
 					</div>
 					<div class="questions__body body-questions">
@@ -724,6 +879,11 @@
 					<button data-goto=".plan" type="button" class="ready__button button">Try for free</button>
 				</div>
 			</section>
+			<button data-goto=".main" class="scroll-up-button">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+					<path d="M11.9999 10.8284L7.0502 15.7782L5.63599 14.364L11.9999 8L18.3639 14.364L16.9497 15.7782L11.9999 10.8284Z"></path>
+				</svg>
+			</button>
 		</main>
 		<footer class="footer">
 			<div class="footer__container">
@@ -744,17 +904,23 @@
 			</div>
 		</footer>
 	</div>
-	<!-- <div id="popup" aria-hidden="true" class="popup">
-	<div class="popup__wrapper">
-		<div class="popup__content">
-			<button data-close type="button" class="popup__close">Закрыть</button>
-			<div class="popup__text">
-				Text
-			</div>
-		</div>
-	</div>
-</div> -->
-	<script src="js/app.min.js?_v=20240621124903"></script>
+	<script>
+		function loadFacebookPixel() {
+			const pixel = document.createElement('img');
+			pixel.src = 'https://www.facebook.com/tr?id=1048406793285757&ev=Lead&noscript=1';
+			pixel.height = 1;
+			pixel.width = 1;
+			document.body.appendChild(pixel);
+		}
+
+		function handleExternalLinkClick(url) {
+			loadFacebookPixel();
+			setTimeout(function() {
+				window.location.href = url;
+			}, 100);
+		}
+	</script>
+	<script src="js/app.min.js?_v=20240621161231"></script>
 </body>
 
 </html>
